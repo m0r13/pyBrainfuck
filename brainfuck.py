@@ -223,7 +223,7 @@ class BrainfuckInterpreter:
                     "," : "cells[pos] = getchar();",
                     "[" : "while(cells[pos] != 0) {",
                     "]" : "}"}
-        source = "#include <stdio.h>\nint main() {\nint pos = 0;\nchar cells[3000];\n"
+        source = "#include <stdio.h>\nint main() {\nint pos = 0;\nchar cells[30000];\n"
         for command in self._commands:
             if not self._operators.has_key(command) or not c_commands.has_key(command):
                 continue
@@ -270,5 +270,5 @@ if __name__ == "__main__":
         interpreter.execute()        
     elif options.compile:
         output.write(interpreter.to_c())
-        if options.input:
+        if options.output:
             output.close()
