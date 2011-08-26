@@ -9,4 +9,4 @@ Command line options:
 	-o --output		- 	The file to write the compiled c code.
 
 If you don't set the input file the input is read from stdin.
-If you don't set the output file the output is write to stdout.
+If you don't set the output file the output is written to stdout.

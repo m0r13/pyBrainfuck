@@ -270,3 +270,5 @@ if __name__ == "__main__":
         interpreter.execute()        
     elif options.compile:
         output.write(interpreter.to_c())
+        if options.input:
+            output.close()
