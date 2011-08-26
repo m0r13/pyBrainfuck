@@ -1,0 +1,12 @@
+pyBrainfuck is a little Brainfuck interpreter and compiler written in Python.
+
+Command line actions:
+	-x --execute 	-	Executes a Brainfuck script.
+	-c --compile 	-	Compiles a Brainfuck script to c code.
+	
+Command line options:
+	-i --input 		-	The file to read Brainfuck code from.
+	-o --output		- 	The file to write the compiled c code.
+
+If you don't set the input file the input is read from stdin.
+If you don't set the output file the output is write to stdout.
